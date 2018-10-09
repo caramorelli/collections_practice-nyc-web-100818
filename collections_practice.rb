@@ -1,4 +1,4 @@
-
+require 'active_support/inflector'
 
 def sort_array_asc(array)
   array.sort
@@ -53,8 +53,7 @@ def sum_array(num_arr)
   num_arr.reduce(:+)
 end
 
-require 'linguistics'
-# Linguistics.use :en
+
 
 def add_s(array)
   array.map do |word|
