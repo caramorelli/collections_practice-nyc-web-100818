@@ -56,8 +56,11 @@ end
 
 def add_s(array)
   array.map do |word|
-    word.pluralize unless word == 'feet'
-    word
+    if word == 'feet'
+      word 
+    else 
+      word.pluralize
+    end 
   end 
    
 end 
