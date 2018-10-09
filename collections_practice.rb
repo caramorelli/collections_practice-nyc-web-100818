@@ -54,10 +54,9 @@ def sum_array(num_arr)
 end
 
 
-
 def add_s(array)
   array.map do |word|
-    word.en.plural
+    word.pluralize
   end 
    
 end 
